@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="2pa-VP-lDe">
-                                <rect key="frame" x="103.66666666666667" y="363.66666666666669" width="185.66666666666663" height="125"/>
+                                <rect key="frame" x="103.66666666666667" y="329.66666666666669" width="185.66666666666663" height="193.00000000000006"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lz0-p2-Hof">
                                         <rect key="frame" x="8.3333333333333286" y="0.0" width="169" height="34.333333333333336"/>
@@ -41,6 +41,12 @@
                                             <action selector="sendWSBtnOnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cw5-oo-s5p"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0U-yK-ZBn">
+                                        <rect key="frame" x="67.999999999999986" y="143" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -52,6 +58,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="logLbl" destination="F0U-yK-ZBn" id="aYM-gr-lP8"/>
                         <outlet property="sendMessageBtn" destination="8fT-go-ABZ" id="ajb-gq-HPE"/>
                         <outlet property="startBtn" destination="lz0-p2-Hof" id="zq3-L3-qU9"/>
                         <outlet property="statusLbl" destination="ofW-9O-Ppz" id="pp0-bu-pVd"/>

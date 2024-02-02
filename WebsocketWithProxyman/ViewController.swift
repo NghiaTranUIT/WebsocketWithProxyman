@@ -12,7 +12,8 @@ final class ViewController: UIViewController, URLSessionWebSocketDelegate {
     @IBOutlet weak var startBtn: UIButton!
     @IBOutlet weak var sendMessageBtn: UIButton!
     @IBOutlet weak var statusLbl: UILabel!
-
+    @IBOutlet weak var logLbl: UILabel!
+    
     private var count = 0
     private var isConnected = false {
         didSet {
@@ -53,7 +54,9 @@ final class ViewController: UIViewController, URLSessionWebSocketDelegate {
             case .success(let message):
                 switch message {
                 case .string(let text):
-                    print("Received: \(text)")
+                    let log = "Received: \(text)"
+                    print(log)
+                    self.logLbl.text = log
                 case .data(let data):
                     print("Received: Raw Data: \(data.count)")
                 @unknown default:
