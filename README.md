@@ -8,3 +8,4 @@ This iOS app demonstrates how Proxyman app can capture WS/WSS traffic from URLSe
 3. Done ✅ Proxyman can capture Websocket Traffic.
 
 ### Screenshot
+![Capture Websocket from iOS with Proxyman and Atlantis](./screenshots/capture_ws_proxyman.jpg)
