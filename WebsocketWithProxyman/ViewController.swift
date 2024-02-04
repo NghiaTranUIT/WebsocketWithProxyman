@@ -27,7 +27,8 @@ final class ViewController: UIViewController, URLSessionWebSocketDelegate {
         return URLSession(configuration: .default, delegate: self, delegateQueue: .main)
     }()
     private lazy var webSocketTask: URLSessionWebSocketTask = {
-        return session.webSocketTask(with: URL(string: "wss://ws.postman-echo.com/raw")!)
+        let request = URLRequest(url: URL(string: "wss://ws.postman-echo.com/raw")!)
+        return session.webSocketTask(with: request)
     }()
 
     override func viewDidLoad() {

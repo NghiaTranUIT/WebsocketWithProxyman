@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAADFC1E2B6F72830013666E /* Atlantis in Frameworks */ = {isa = PBXBuildFile; productRef = BAADFC1D2B6F72830013666E /* Atlantis */; };
 		BAB925FF2B6CD7E50007EDF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB925FE2B6CD7E50007EDF5 /* AppDelegate.swift */; };
 		BAB926012B6CD7E50007EDF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB926002B6CD7E50007EDF5 /* SceneDelegate.swift */; };
 		BAB926032B6CD7E50007EDF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB926022B6CD7E50007EDF5 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAADFC1E2B6F72830013666E /* Atlantis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = WebsocketWithProxyman;
+			packageProductDependencies = (
+				BAADFC1D2B6F72830013666E /* Atlantis */,
+			);
 			productName = WebsocketWithProxyman;
 			productReference = BAB925FB2B6CD7E50007EDF5 /* WebsocketWithProxyman.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = BAB925F22B6CD7E50007EDF5;
+			packageReferences = (
+				BAADFC1C2B6F72830013666E /* XCRemoteSwiftPackageReference "atlantis" */,
+			);
 			productRefGroup = BAB925FC2B6CD7E50007EDF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BAADFC1C2B6F72830013666E /* XCRemoteSwiftPackageReference "atlantis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ProxymanApp/atlantis";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BAADFC1D2B6F72830013666E /* Atlantis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAADFC1C2B6F72830013666E /* XCRemoteSwiftPackageReference "atlantis" */;
+			productName = Atlantis;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BAB925F32B6CD7E50007EDF5 /* Project object */;
 }
