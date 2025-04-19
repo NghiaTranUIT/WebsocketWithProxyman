@@ -377,8 +377,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ProxymanApp/atlantis";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.24.0;
+				kind = exactVersion;
+				version = 1.28.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
